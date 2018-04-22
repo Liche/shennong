@@ -1,3 +1,4 @@
 config.yml
 save
 __pycache__
+*.pyc

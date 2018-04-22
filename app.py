@@ -7,6 +7,8 @@ from tongue_classifier import classifier
 
 app = Flask(__name__)
 
+classifier.initialize()
+
 
 @app.route('/classify', methods=['POST'])
 def post():
@@ -28,5 +30,4 @@ def post():
 
 
 if __name__ == '__main__':
-    classifier.initialize()
     app.run()
